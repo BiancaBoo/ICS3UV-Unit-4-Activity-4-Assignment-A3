@@ -6,10 +6,10 @@
  */
 
 console.log("Please enter a sentence?");
-const sentence: string = prompt("Enter a sentence: ") ?? "";
+const sentence: string = prompt("Enter a sentence: ") || "";
 
 console.log("Please enter a word to search for in your sentence?");
-const word: string = prompt("Enter a word: ") ?? "";
+const word: string = prompt("Enter a word: ") || "";
 
 if (sentence.includes(word)) {
   console.log("Hooray, the word " + word +
