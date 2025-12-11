@@ -6,12 +6,11 @@
  */
 
 console.log("Please enter a sentence?");
-let sentence: string = prompt("");
+const sentence: string = prompt("Enter a sentence: ") ?? "";
 
 console.log("Please enter a word to search for in your sentence?");
-let word: string = prompt("");
+const word: string = prompt("Enter a word: ") ?? "";
 
-// check if the word exists
 if (sentence.includes(word)) {
   console.log("Hooray, the word " + word +
     " was found in the sentence: " + sentence);
@@ -19,5 +18,3 @@ if (sentence.includes(word)) {
   console.log("Sorry, the word " + word +
     " was not found in the sentence: " + sentence);
 }
-
-console.log("\nDone.");
